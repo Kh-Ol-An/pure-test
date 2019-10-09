@@ -1,0 +1,95 @@
+.main {
+  width: 76vw;
+  height: 100vh;
+}
+
+.container {
+  width: 48.18em;
+  height: 48.18em;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48.36%);
+}
+
+.container:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  border-radius: 50%;
+  top: 25%;
+  left: 25%;
+}
+
+.sector {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform-origin: left bottom;
+  /* border-radius: 0; */
+}
+
+.sector1 {
+  composes: sector;
+  transform: skewY(135deg);
+  background-color: #f1f5f9;
+}
+
+.sector2 {
+  composes: sector;
+  transform: rotate(45deg) skewY(135deg);
+  background-color: #f1f5f9;
+}
+
+.sector3 {
+  composes: sector;
+  transform: rotate(90deg) skewY(135deg);
+  background-color: #f1f5f9;
+}
+
+.sector4 {
+  composes: sector;
+  transform: rotate(135deg) skewY(135deg);
+  background-color: #f1f5f9;
+}
+
+.sector5 {
+  composes: sector;
+  transform: rotate(180deg) skewY(135deg);
+  background-color: #f1f5f9;
+}
+
+.sector6 {
+  composes: sector;
+  transform: rotate(225deg) skewY(135deg);
+  background-color: #f1f5f9;
+}
+
+.sector7 {
+  composes: sector;
+  transform: rotate(270deg) skewY(135deg);
+  background-color: #f1f5f9;
+}
+
+.sector8 {
+  composes: sector;
+  transform: rotate(315deg) skewY(135deg);
+  background-color: #f1f5f9;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.icon1 {
+  composes: icon;
+  transform: rotate(0deg) skewY(45deg);
+}
